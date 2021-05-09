@@ -1,3 +1,4 @@
+/*------General------ */
 body{
     background-color:rgba(211, 204, 204, 0.849);
     width: 100%;
@@ -7,17 +8,18 @@ main{
     padding-top: 15vh;
 }
 
-#logo{
-    width: 160px  !important;
-}
 h1{
     text-align: center;
     padding-top: 10px;
 }
 
+a:link, a:visited, a:active {
+    text-decoration:none;
+}
 main>.row{
     padding:50px 0px;
 }
+
 .navbar{
     position: fixed;
 
@@ -26,12 +28,19 @@ main>.row{
    color: #34BEBD;
    
 }
+
 .btn-primary {
     color: #fff;
     background-color: #34BEBD;
     border-color:#34BEBD;
 }
-
+/*------Imagenes------ */
+.portada{
+    width: 80%!important;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
 
 .imagen>img{
     display: block;
@@ -39,6 +48,15 @@ main>.row{
     height: 130%  !important;
     background-color: blue;
 }
+
+#logo{
+    width: 160px  !important;
+}
+
+.card{
+    position: inherit;
+}
+/*------------ */
 footer{
     position: absolute;
     top: 90%;
