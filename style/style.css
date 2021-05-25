@@ -10,11 +10,11 @@ main{
     padding-top: 14vh;
 }
 
-h1{
+h1,h3{
     text-align: center;
     padding-top: 10px;
 }
-.txtcenter{
+.txtcenter,td,th{
     text-align: center;
 }
 p{
@@ -84,10 +84,10 @@ footer{
 
 /*------Ajustando contenidos------ */
 @media (orientation: portrait) {
-    .none,.cards{
+    .none,.cards,.table{
         display: none;
     }
-    .abc,.botones{
+    .abc,.botones,.tablephone{
         display: block !important;
     }
     main{
@@ -99,4 +99,11 @@ footer{
         padding: 10px;
 
     }
+   
+    th,td{
+
+        width: 50%;
+    }
+
+  
   }
