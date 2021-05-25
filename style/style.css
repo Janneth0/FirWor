@@ -1,18 +1,25 @@
 /*------General------ */
-body{
+html,body{
+    margin: 0;
     background-color:rgba(211, 204, 204, 0.849);
-    width: 100%;
-    height: 100%;
+    /* width: 100%; */
+    /* height: 100%; */
+    
 }
 main{
-    padding-top: 15vh;
+    padding-top: 14vh;
 }
 
 h1{
     text-align: center;
     padding-top: 10px;
 }
-
+.txtcenter{
+    text-align: center;
+}
+p{
+    text-align: justify;
+}
 a:link, a:visited, a:active {
     text-decoration:none;
 }
@@ -33,6 +40,17 @@ main>.row{
     color: #fff;
     background-color: #34BEBD;
     border-color:#34BEBD;
+}
+.btn-link{
+    text-decoration: none;
+}
+/* TIpos de contratos */
+.cardTC{
+    background-color: #13274E;
+    color: #fff;
+}
+.card{
+    margin: 10px;
 }
 /*------Imagenes------ */
 .portada{
@@ -63,3 +81,22 @@ footer{
 
     background-color: aqua;
 }
+
+/*------Ajustando contenidos------ */
+@media (orientation: portrait) {
+    .none,.cards{
+        display: none;
+    }
+    .abc,.botones{
+        display: block !important;
+    }
+    main{
+        padding-top: 10vh !important;
+    }
+    .boton{
+        width: 80%;
+        margin: 10px 10px 10px 35px;
+        padding: 10px;
+
+    }
+  }
