@@ -84,7 +84,7 @@ footer{
 
 /*------Ajustando contenidos------ */
 @media (orientation: portrait) {
-    .none,.cards,.table{
+    .none,.cards,.tableweb{
         display: none;
     }
     .abc,.botones,.tablephone{
