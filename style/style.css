@@ -14,7 +14,7 @@ h1,h3{
     text-align: center;
     padding-top: 10px;
 }
-.txtcenter,td,th{
+.txtcenter,td,th,.defin{
     text-align: center;
 }
 p{
@@ -24,11 +24,12 @@ a:link, a:visited, a:active {
     text-decoration:none;
 }
 main>.row{
-    padding:50px 0px;
+    padding:20px 0px;
 }
 
 .navbar{
     position: fixed;
+    z-index: 1000;
 
 }
 .navbar-dark .navbar-nav .nav-link {
@@ -43,14 +44,37 @@ main>.row{
 }
 .btn-link{
     text-decoration: none;
+    color: #13274E;
+    font-weight: bold !important;
+    text-align: center !important;
+}
+#accordion{
+    width: 50%;
+    margin: 0% 30%;
 }
 /* TIpos de contratos */
 .cardTC{
-    background-color: #13274E;
-    color: #fff;
+    background-color: #34bebecb;
+    color: rgba(19, 19, 19, 0.959);
+    text-align: center;
+    
 }
 .card{
     margin: 10px;
+    position: inherit;
+}
+
+.cards .row{
+    margin: 0 10%  0% 10%;
+}
+.cards .card-body{
+    padding:  0 !important;
+    
+}
+.cards .card{
+    margin: 3% 0% 4% 5%;
+  max-width: 39% !important;
+  max-height: 25rem !important;
 }
 /*------Imagenes------ */
 .portada{
@@ -71,9 +95,6 @@ main>.row{
     width: 160px  !important;
 }
 
-.card{
-    position: inherit;
-}
 /*------------ */
 footer{
     position: absolute;
@@ -81,7 +102,17 @@ footer{
 
     background-color: aqua;
 }
-
+#txtinput{
+    margin-left:40px ;
+}
+.busqueda{
+    width: 60vw;
+    margin-left: 30% 0%;
+}
+.container-sm{
+    max-width: 80%;
+    margin: 0% 10%;
+}
 /*------Ajustando contenidos------ */
 @media (orientation: portrait) {
     .none,.cards,.tableweb{
@@ -99,11 +130,54 @@ footer{
         padding: 10px;
 
     }
-   
+    .busqueda{
+        width: 90%;
+        margin-left: 00vw;
+    }
     th,td{
 
         width: 50%;
     }
-
+    .card{
+        margin:5% 0%;
+    }
+    #accordion{
+        width: 100% !important;
+        margin: 0% !important;
+    }
   
+  }
+  @media   (orientation: landscape) and  (max-width: 760px){
+     
+      #accordion{
+        width: 100% !important;
+        margin: 0% !important;
+    }
+    .card{
+        text-align: center;
+        width: 15.5rem !important;
+        height: 29rem !important;
+        
+    }
+    .cards .row{
+        margin: 10% 0%;
+    }
+    .cards .card-body{
+        padding:  0 !important;
+        
+    }
+    .cards .card{
+        margin: 0% 0% 0% 15px;
+      max-width: 15rem !important;
+      max-height: 27rem !important;
+    }
+    
+
+
+    .cardhab{
+        /* background-color: #34BEBD; */
+      width: 16rem !important;
+      /* height: 18.5rem !important; */
+      margin: 20px !important;
+    }
   }
