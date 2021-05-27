@@ -113,6 +113,16 @@ footer{
     max-width: 80%;
     margin: 0% 10%;
 }
+.imgcar{
+    max-width: 50%;
+    margin: 0 24% 0 24%;
+}
+.carousel-inner{
+    text-align: center;
+}
+.sr-only{
+    color: #13274E
+}
 /*------Ajustando contenidos------ */
 @media (orientation: portrait) {
     .none,.cards,.tableweb{
@@ -177,7 +187,7 @@ footer{
     .cardhab{
         /* background-color: #34BEBD; */
       width: 16rem !important;
-      /* height: 18.5rem !important; */
+      height: 18.5rem !important;
       margin: 20px !important;
     }
   }
