@@ -1,4 +1,5 @@
 /*------General------ */
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
 html,body{
     margin: 0;
     background-color:rgba(211, 204, 204, 0.849);
@@ -9,7 +10,9 @@ html,body{
 main{
     padding-top: 14vh;
 }
-
+/* #main-welcome{
+    padding: 0;
+} */
 h1,h3{
     text-align: center;
     padding-top: 10px;
@@ -123,12 +126,146 @@ footer{
 .sr-only{
     color: #13274E
 }
+
+/* WELCOME */
+.box-welcomepc{
+  /* background-color: #34BEBD; */
+  margin-left: 4.5%;
+}
+.css-typing p {
+  /* background-color: #13274E; */
+    border-right: .15em solid orange;
+    /* text-align: center; */
+    font-family: "Courier";
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  .css-typing p:nth-child(1) {
+    width: 32.3em;
+    -webkit-animation: type 3s steps(40, end);
+    animation: type 3s steps(40, end);
+    -webkit-animation-fill-mode: forwards;
+    margin-left: 9%;
+    animation-fill-mode: forwards;
+  }
+  
+  .css-typing p:nth-child(2) {
+    width: 22.5em;
+    opacity: 0;
+    -webkit-animation: type2 3s steps(40, end);
+    animation: type2 3s steps(40, end);
+    -webkit-animation-delay: 4s;
+    animation-delay: 3s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    margin-left: 16%;
+  }
+  
+  .css-typing p:nth-child(3) {
+    width: 23em;
+    opacity: 0;
+    -webkit-animation: type2 3s steps(40, end);
+    animation: type2 3s steps(40, end);
+    -webkit-animation-delay: 4s;
+    animation-delay: 6s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    margin-left: 16.5%;
+  }
+  
+  @keyframes type {
+    0% {
+      width: 0;
+    }
+    99.9% {
+      border-right: .15em solid orange;
+    }
+    100% {
+      border: none;
+    }
+  }
+  
+  
+  @keyframes type2 {
+    0% {
+      width: 0;
+    }
+    1% {
+      opacity: 1;
+    }
+    99.9% {
+      border-right: .15em solid orange;
+    }
+    100% {
+      opacity: 1;
+      border: none;
+    }
+  }
+  
+
+
+  
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+
+  /* BOTON */
+  .wrapper {
+    height: 100%;
+    margin: 0 ;
+    padding-top: 120px;
+    /* text-align: center; */
+  }
+  
+  .hide {
+    visibility: hidden;
+  }
+  
+  .button-p {
+    color:white;
+    width: 9.45em;
+    height: 3.15em;
+    background: #19A087;  
+    border-radius: 0.189em;
+    text-align: center;
+    cursor: pointer;
+    z-index: 1;
+    margin: auto;
+    position: relative;
+    top: 60%;
+    /* bottom: 15%; */
+    left: 0;
+    right: 0;
+    transition: background 0.5s
+  }
+  
+  .button:hover {
+    background: #88ecd7;
+  }
+  
+  /* .button p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1.1em;
+    letter-spacing: 0.063em;
+    line-height: 3.0em;
+    color: #fff;  
+    text-shadow: 0 0 0.063em #7a7a7a;
+  } */
+  
+
+
 /*------Ajustando contenidos------ */
 @media (orientation: portrait) {
     .none,.cards,.tableweb{
         display: none;
     }
-    .abc,.botones,.tablephone{
+    .abc,.botones,.tablephone, .box-welcome{
         display: block !important;
     }
     main{
@@ -155,7 +292,101 @@ footer{
         width: 100% !important;
         margin: 0% !important;
     }
-  
+    .line-1,.line-2,.line-3,.line-4{
+        font-size: 110%;
+    }
+    /* text-welcome */
+    #box-welcome{
+      background-color: #be3480;
+    }
+    .css-typing p {
+      /* background-color: #13274E; */
+        border-right: .15em solid orange;
+        /* text-align: center; */
+        font-family: "Courier";
+        font-size: 14px;
+     
+      }
+      .css-typing p:nth-child(1) {
+        width: 18em;
+        margin-left: 10%;
+        -webkit-animation: type 3s steps(40, end);
+        animation: type 3s steps(40, end);
+        -webkit-animation-fill-mode: forwards;    
+        animation-fill-mode: forwards;
+      }
+      
+      .css-typing p:nth-child(2) {
+        width: 17.5em;
+        opacity: 0;
+        margin-left: 9%;
+        -webkit-animation: type2 3s steps(40, end);
+        animation: type2 3s steps(40, end);
+        -webkit-animation-delay: 4s;
+        animation-delay: 3s;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+        
+      }
+      
+      .css-typing p:nth-child(3) {
+        width: 18em;
+        opacity: 0;
+        -webkit-animation: type2 3s steps(40, end);
+        animation: type2 3s steps(40, end);
+        -webkit-animation-delay: 4s;
+        animation-delay: 6s;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+        margin-left: 8%;
+      }
+      .css-typing p:nth-child(4) {
+        width:23.5em;
+        opacity: 0;
+        margin-left: 0%;
+        -webkit-animation: type2 3s steps(40, end);
+        animation: type2 3s steps(40, end);
+        animation-delay: 9s;
+        -webkit-animation-fill-mode: forwards;    
+        animation-fill-mode: forwards;
+      }
+      
+      @keyframes type {
+        0% {
+          width: 0;
+        }
+        99.9% {
+          border-right: .15em solid orange;
+        }
+        100% {
+          border: none;
+        }
+      }
+      
+      
+      @keyframes type2 {
+        0% {
+          width: 0;
+        }
+        1% {
+          opacity: 1;
+        }
+        99.9% {
+          border-right: .15em solid orange;
+        }
+        100% {
+          opacity: 1;
+          border: none;
+        }
+      }
+          
+      @keyframes blink {
+        50% {
+          border-color: transparent;
+        }
+      }
+    
+
   }
   @media   (orientation: landscape) and  (max-width: 760px){
      
@@ -181,8 +412,6 @@ footer{
       max-width: 15rem !important;
       max-height: 27rem !important;
     }
-    
-
 
     .cardhab{
         /* background-color: #34BEBD; */
@@ -190,4 +419,166 @@ footer{
       height: 18.5rem !important;
       margin: 20px !important;
     }
+    .line-1,.line-2,.line-3,.line-4{
+        font-size: 110%;
+    }
+    .box-welcomepc{
+      margin: 0;
+    }
   }
+
+
+
+/* PRESENTACION 2 */
+
+.cont-center{
+    background-color: blue;
+    width: 45vw;
+    height: 84vh ;
+    margin: 0;
+    margin: 8vh 27vw 8vh 27vw;
+}
+.present{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ******************************Eliminar apartir de aca ****************************** */
+
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+    
+    
+    .present{
+        position: absolute;
+        width: 1000px;
+        left: 0;
+        margin: 10px 25vw 0px 25vw;
+        z-index: -5;
+    }
+    .text-present{
+      position: relative;
+      width: 40%;
+      top:110vh;
+      margin-left: 30%;
+      padding-bottom: 5%;
+    }
+    .container-pre { /*IMPORTANTE*/
+      width: 100%;
+      height: 100%;
+      max-width: 400px;
+      z-index: 100;
+      max-height:400px;
+      position: absolute;
+        text-align: center;
+      /* top: 0; */
+      /* left: 0; */
+        margin: 0 30vw 0 30vw;
+      /* right: 0; */
+      /* bottom: 0; */
+      /* margin: auto; */
+    }
+    .tapanot{
+        margin:10% 0 0 10%;
+        width: 90%;
+    }
+    .notebook {
+      position: relative;
+      height: 80%;
+      width: 130%;
+      left: 38%;/*0=pc/// */
+      top: 73%;
+      perspective: 2500px;
+    }
+    
+    .cover {
+      position: relative; 
+      height: 100%;
+      width: 100%;
+      background: #13274E;
+      transform-origin: bottom ;
+      animation: open 5s ;
+        animation-fill-mode: forwards;
+      z-index: 5;
+    }
+    
+    .page {
+      position: relative;
+      height: 100%;
+      width: 100%;
+      top: -100%;
+      background: #fff;
+      border-right: 1px solid #ccc;
+    }
+    
+    .page p {
+      position: relative;
+      text-align: center;
+      font-size: 24px;
+      top: 40%;
+      background: none;
+    }
+    
+    @keyframes open {
+      0%,30% {
+        transform: rotateX(0deg);
+      }
+      50%,80% {
+        transform: rotateX(-100deg);
+      }
+      100% {
+        transform: rotateX(-100deg);
+      }
+    }
+    
+    /* text-animacion */
+    .anim-typewriter{
+      animation: typewriter 4s steps(44) 1s 1 normal both,
+                 blinkTextCursor 500ms steps(44) infinite normal;
+    }
+    @keyframes typewriter{
+      from{width: 0;}
+      to{width: 20em;}
+    }
+    @import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+
+.line-1{
+    position: relative;
+    top: 50%;  
+    width: 24em;
+    margin: 0 auto;
+    /* border-right: 2px solid rgba(255,255,255,.75); */
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
