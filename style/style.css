@@ -1,4 +1,5 @@
 /*------General------ */
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
 html,body{
     margin: 0;
     background-color: #E8E8E8;
@@ -9,7 +10,9 @@ html,body{
 main{
     padding-top: 14vh;
 }
-
+/* #main-welcome{
+    padding: 0;
+} */
 h1,h3{
     text-align: center;
     padding-top: 10px;
@@ -131,12 +134,154 @@ footer{
     padding: 10%;
     
 }
+
+/* WELCOME */
+.box-welcomepc{
+  /* background-color: #34BEBD; */
+  margin-left: 4.5%;
+}
+.css-typing p {
+  /* background-color: #13274E; */
+    border-right: .15em solid orange;
+    /* text-align: center; */
+    font-family: "Courier";
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  .css-typing p:nth-child(1) {
+    width: 32.3em;
+    -webkit-animation: type 3s steps(40, end);
+    animation: type 3s steps(40, end);
+    -webkit-animation-fill-mode: forwards;
+    margin-left: 9%;
+    animation-fill-mode: forwards;
+  }
+  
+  .css-typing p:nth-child(2) {
+    width: 22.5em;
+    opacity: 0;
+    -webkit-animation: type2 3s steps(40, end);
+    animation: type2 3s steps(40, end);
+    -webkit-animation-delay: 4s;
+    animation-delay: 3s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    margin-left: 16%;
+  }
+  
+  .css-typing p:nth-child(3) {
+    width: 23em;
+    opacity: 0;
+    -webkit-animation: type2 3s steps(40, end);
+    animation: type2 3s steps(40, end);
+    -webkit-animation-delay: 4s;
+    animation-delay: 6s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    margin-left: 16.5%;
+  }
+  
+  @keyframes type {
+    0% {
+      width: 0;
+    }
+    99.9% {
+      border-right: .15em solid orange;
+    }
+    100% {
+      border: none;
+    }
+  }
+  
+  
+  @keyframes type2 {
+    0% {
+      width: 0;
+    }
+    1% {
+      opacity: 1;
+    }
+    99.9% {
+      border-right: .15em solid orange;
+    }
+    100% {
+      opacity: 1;
+      border: none;
+    }
+  }
+  
+
+
+  
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+
+  /* BOTON */
+  .wrapper {
+    height: 100%;
+    margin: 0 ;
+    padding-top: 120px;
+    /* text-align: center; */
+  }
+  
+  .hide {
+    visibility: hidden;
+  }
+  
+  .button-p {
+    color:white;
+    width: 9.45em;
+    height: 3.15em;
+    background: #19A087;  
+    border-radius: 0.189em;
+    text-align: center;
+    cursor: pointer;
+    z-index: 1;
+    margin: auto;
+    position: relative;
+    top: 60%;
+    /* bottom: 15%; */
+    left: 0;
+    right: 0;
+  }
+  
+  .button:hover {
+    background: #88ecd7;
+  }
+
+
+
+  .text-present{
+    position: relative;
+    width: 80%;
+    margin:0  auto;
+    padding-bottom: 5%;
+  }
+  .card-p .row{
+    margin: 0 ;
+    padding: 0;
+  }
+  .card-p .box{
+    max-width: 600px;
+    padding: 0 auto;
+    margin: 6px;
+  }
+  /* .img-lab{
+    position: relative;
+    margin: 0 auto;
+    background-color: #34BEBD;
+  } */
+ 
 /*------Ajustando contenidos------ */
 @media (orientation: portrait) {
     .none,.cards,.tableweb{
         display: none;
     }
-    .abc,.botones,.tablephone{
+    .abc,.botones,.tablephone, .box-welcome{
         display: block !important;
     }
     main{
@@ -163,7 +308,101 @@ footer{
         width: 100% !important;
         margin: 0% !important;
     }
-  
+    .line-1,.line-2,.line-3,.line-4{
+        font-size: 110%;
+    }
+    /* text-welcome */
+    #box-welcome{
+      background-color: #be3480;
+    }
+    .css-typing p {
+      /* background-color: #13274E; */
+        border-right: .15em solid orange;
+        /* text-align: center; */
+        font-family: "Courier";
+        font-size: 14px;
+     
+      }
+      .css-typing p:nth-child(1) {
+        width: 18em;
+        margin-left: 10%;
+        -webkit-animation: type 3s steps(40, end);
+        animation: type 3s steps(40, end);
+        -webkit-animation-fill-mode: forwards;    
+        animation-fill-mode: forwards;
+      }
+      
+      .css-typing p:nth-child(2) {
+        width: 17.5em;
+        opacity: 0;
+        margin-left: 9%;
+        -webkit-animation: type2 3s steps(40, end);
+        animation: type2 3s steps(40, end);
+        -webkit-animation-delay: 4s;
+        animation-delay: 3s;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+        
+      }
+      
+      .css-typing p:nth-child(3) {
+        width: 18em;
+        opacity: 0;
+        -webkit-animation: type2 3s steps(40, end);
+        animation: type2 3s steps(40, end);
+        -webkit-animation-delay: 4s;
+        animation-delay: 6s;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+        margin-left: 8%;
+      }
+      .css-typing p:nth-child(4) {
+        width:23.5em;
+        opacity: 0;
+        margin-left: 0%;
+        -webkit-animation: type2 3s steps(40, end);
+        animation: type2 3s steps(40, end);
+        animation-delay: 9s;
+        -webkit-animation-fill-mode: forwards;    
+        animation-fill-mode: forwards;
+      }
+      
+      @keyframes type {
+        0% {
+          width: 0;
+        }
+        99.9% {
+          border-right: .15em solid orange;
+        }
+        100% {
+          border: none;
+        }
+      }
+      
+      
+      @keyframes type2 {
+        0% {
+          width: 0;
+        }
+        1% {
+          opacity: 1;
+        }
+        99.9% {
+          border-right: .15em solid orange;
+        }
+        100% {
+          opacity: 1;
+          border: none;
+        }
+      }
+          
+      @keyframes blink {
+        50% {
+          border-color: transparent;
+        }
+      }
+    
+
   }
 
   .card-style{
@@ -203,8 +442,6 @@ footer{
       max-width: 15rem !important;
       max-height: 27rem !important;
     }
-    
-
 
     .cardhab{
         /* background-color: #34BEBD; */
@@ -213,6 +450,53 @@ footer{
       margin: 20px !important;
       
     }
-
-    
+    .line-1,.line-2,.line-3,.line-4{
+        font-size: 110%;
+    }
+    .box-welcomepc{
+      margin: 0;
+    }
   }
+
+
+
+/* PRESENTACION 2 */
+
+.cont-center{
+    background-color: blue;
+    width: 45vw;
+    height: 84vh ;
+    margin: 0;
+    margin: 8vh 27vw 8vh 27vw;
+}
+.present{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

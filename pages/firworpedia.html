@@ -14,44 +14,50 @@
 <body class="container-fluid">
   <!-- <h1>FIRWOR</h1> -->
   <header class="row">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
-      <a href="../index.html">
-        <img class="col-lg-1 col.md-1 col-sm-2 col-3" src="../img/logo-small.png" alt="Firwor-logo" id="logo">
+    <nav class="navbar navbar-expand-lg navbar-dark " >
+      <div class="col-lg-1 col.md-1 col-sm-1 col-1"></div>
+      <a href="presentacion.html">
+        <img class="col-lg-1 col.md-1 col-sm-2 col-3"  src="../img/logo-small.png" alt="Firwor-logo"    id="logo">
       </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02"
-        aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-
+  
       <div class="collapse navbar-collapse" id="navbarColor02">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="../pages/laboral.html">Introduccion al Mundo Laboral</a>
+          <li class="nav-item ">
+            <a class="nav-link"  href="laboral.html" >Introduccion al Mundo Laboral</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="../pages/cv.html">Curriculum Vitae</a>
+            <a class="nav-link" href="cv.html">Curriculum Vitae</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="../pages/habilidades.html">Habilidades blandas</a>
+            <a class="nav-link" href="habilidades.html">Habilidades blandas</a>
+          </li>
+          <li class="nav-item "  >
+            <a class="nav-link "  href="firworpedia.html" >Firworpedia</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="../pages/firworpedia.html">Firworpedia</a>
+            <a class="nav-link" href="busqueda.html">Busqueda Laboral</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../pages/busqueda.html">Pag. </a>
+          <li class="nav-item buscar" >
+            <a class="nav-link " href="quienes-somos.html">Nosotros</a>
           </li>
+          
         </ul>
       </div>
     </nav>
   </header>
   <main class="container-fluid">
+    <div class="defin" style="padding: 10vh;">
+      <img src="../img/titulo.png" alt="">
+    </div>
     <h1>FIRWORPedia</h1>
 
-<h3>Busque la palabra que quiera!</h3> <br>
+<h3>Busque palabras clave sobre el Mundo Laboral</h3> <br>
 
 
     <div class="container busqueda">
-      <!-- <button class="btn" id="boton">JSON</button> -->
       <div class="input-group mb-3 row">
         <input type="text" class="form-control col-8" placeholder="Ingrese la palabra" aria-label="Recipient's palabra"
           aria-describedby="basic-addon2" id="txtinput">
@@ -59,65 +65,14 @@
           <button class="btn btn-outline-secondary " id="boton" type="button">Buscar</button>
         </div>
       </div>
+      <div id="wordFiltrado"></div>
       <div id="word"></div>
 
 
     </div>
 
 
-    <!-- <h2>Junior</h2>
-  <p>Es quien presenta menos de dos años de experiencia, puestos de trabajo considerados para jóvenes que recientemente se inician en el mundo laboral.</p>
 
-  <h2>Semi Senior:</h2>
-  <p>persona la cual presenta entre dos a seis años de experiencia laboral, dirigido a estudiantes avanzados, próximos a graduarse.</p>
-
-  <h2>Senior</h2>
-  <p>puesto dirigido a profesionales con una experiencia mayor a los seis años.</p>
-
-  <h2>Full time</h2>
-  <p>un trabajo full time, es un empleo a tiempo completo con una base de ocho horas diarias.</p>
-
-  <h2>Part time</h2>
-  <p>un empleo part time es cuando la jornada laboral es reducida a una base de cuatro horas diarias.</p>
-
-  <h2>Sueldo Bruto</h2>
-  <p>es la cantidad total de dinero que se paga sin tener en cuenta las reducciones generalizadas fijadas por la ley.</p>
-
-  <h2>Sueldo Neto</h2>
-  <p>es el dinero que se deposita en la cuenta a fin de mes una vez aplicadas las deducciones de ley.</p>
-
-  <h2>Assessment:</h2>
-  <p>es una modalidad de entrevista que muchas empresas adelantan con el fin de que sus procesos de selección sean más efectivos y va más allá de responder cuestionarios de pruebas y competencias</p>
-
-  <h2>Customer:</h2>
-  <p>hace referencia a la palabra cliente.</p>
-
-  <h2>Customer service:</h2>
-  <p>es el soporte que se ofrece a los clientes, tanto antes como después de que compren y usen los productos/servicios con el objetivo de ofrecer una experiencia fácil y agradable para retener a los clientes y ayudar al crecimiento de la empresa.</p>
-
-  <h2>Pasantía:</h2>
-  <p>es una práctica profesional que pueden hacer los estudiantes mayores de 18 años en empresas públicas o privadas para ejercitar su conocimiento.</p>
-
-  <h2>Trainee</h2>
-  <p>es un aprendiz, una empresa puede considerar que es es una buena inversión atraer un trainee, ya que están formando jóvenes muy capaces que se convertirán en el futuro de la empresa. Es atracción y retención de talento joven en estado puro.
-  </p>
-
-  <h2>Interview:</h2>
-  <p>Entrevista</p>
-
-  <h2>Skills</h2>
-  <p>son las habilidades que tiene una persona para poder llevar a cabo tareas concretas. </p>
-
-  <h2>Proficiency</h2>
-  <p>son las competencias, capacidades, aptitudes de la persona.</p>
-
-  <h2>Examen psicotécnico</h2>
-  <p>son test funcionales que miden capacidades y aptitudes intelectuales y profesionales de diversa índole, como memoria verbal y visual, aptitudes numéricas, de lingüística, de conocimiento profesional al igual que rasgos de personalidad, intereses y/o valores personales.
-  </p>
-
-  <h2>Exámenes preocupacionales</h2>
-  <p>tienen como propósito determinar si el postulante es apto, según sus condiciones psicofísicas, para las actividades que se le requerirán en el trabajo. 
-  </p> -->
 
   </main>
   <!-- FOOTER -->
