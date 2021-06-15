@@ -1,6 +1,7 @@
 /*------General------ */
 @import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
 html,body{
+    padding-bottom: 9vh;
     margin: 0;
     background-color: #E8E8E8;
     /* width: 100%; */
@@ -10,15 +11,26 @@ html,body{
 main{
     padding-top: 14vh;
 }
-/* #main-welcome{
-    padding: 0;
-} */
-h1,h3{
-    text-align: center;
-    padding-top: 10px;
+/* Font */
+h1{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 8vh;
+    text-align: left;
+    padding-top: 5vh;
+}
+h2{
+  font-family: 'Bebas Neue', cursive;
+  font-size: 5vh;
+  text-align: left;
+  padding-top: 5vh;
+  padding-bottom: 3vh;
 }
 .txtcenter,td,th,.defin{
     text-align: center;
+}
+.copete{
+  font-size: 3vh;
+  font-family: 'Baloo Tammudu 2', cursive;
 }
 p{
     text-align: justify;
@@ -58,6 +70,8 @@ main>.row{
     width: 50%;
     margin: 0% 30%;
 }
+
+
 /* TIpos de contratos */
 .cardTC{
     background-color: #34bebecb;
@@ -256,10 +270,9 @@ footer{
 
 
   .text-present{
-    position: relative;
-    width: 80%;
-    margin:0  auto;
-    padding-bottom: 5%;
+    display: grid;
+    grid-template-columns: 1fr  1fr;
+    grid-gap: 20px;
   }
   .card-p .row{
     margin: 0 ;
