@@ -15,7 +15,7 @@ main{
 h1{
     font-family: 'Bebas Neue', cursive;
     font-size: 8vh;
-    text-align: left;
+    text-align: center;
     padding-top: 5vh;
 }
 h2{
@@ -43,7 +43,7 @@ main>.row{
 }
 
 .navbar{
-    height: 10vh;
+  z-index: 100;
     position: fixed;
     background: #013374; 
 	box-shadow: 0 1px 50px rgba(29, 31, 33, 0.6) inset; 
@@ -54,7 +54,9 @@ main>.row{
    color: #34BEBD;
    
 }
-
+span{
+  padding: 0px 10px 0px 24px;
+}
 .btn-primary {
     color: #fff;
     background-color: #34BEBD;
@@ -66,12 +68,6 @@ main>.row{
     font-weight: bold !important;
     text-align: center !important;
 }
-#accordion{
-    width: 50%;
-    margin: 0% 30%;
-}
-
-
 /* TIpos de contratos */
 .cardTC{
     background-color: #34bebecb;
@@ -150,30 +146,31 @@ footer{
 }
 
 /* WELCOME */
-.box-welcomepc{
-  /* background-color: #34BEBD; */
-  margin-left: 4.5%;
+.texto{
+  /* background-color: blueviolet; */
+  margin: 3em 0 0 15%;
 }
 .css-typing p {
   /* background-color: #13274E; */
     border-right: .15em solid orange;
     /* text-align: center; */
     font-family: "Courier";
-    font-size: 14px;
+    font-size: 22px;
+
     white-space: nowrap;
     overflow: hidden;
   }
   .css-typing p:nth-child(1) {
-    width: 32.3em;
+    width: 32em;
     -webkit-animation: type 3s steps(40, end);
     animation: type 3s steps(40, end);
     -webkit-animation-fill-mode: forwards;
-    margin-left: 9%;
+    margin-left: -15%;
     animation-fill-mode: forwards;
   }
   
   .css-typing p:nth-child(2) {
-    width: 22.5em;
+    width: 24em;
     opacity: 0;
     -webkit-animation: type2 3s steps(40, end);
     animation: type2 3s steps(40, end);
@@ -181,11 +178,11 @@ footer{
     animation-delay: 3s;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
-    margin-left: 16%;
+    margin-left: 0%;
   }
   
   .css-typing p:nth-child(3) {
-    width: 23em;
+    width: 25em;
     opacity: 0;
     -webkit-animation: type2 3s steps(40, end);
     animation: type2 3s steps(40, end);
@@ -193,7 +190,7 @@ footer{
     animation-delay: 6s;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
-    margin-left: 16.5%;
+    margin-left: -2%;
   }
   
   @keyframes type {
@@ -238,7 +235,7 @@ footer{
   .wrapper {
     height: 100%;
     margin: 0 ;
-    padding-top: 120px;
+    /* padding-top: 120px; */
     /* text-align: center; */
   }
   
@@ -255,9 +252,9 @@ footer{
     text-align: center;
     cursor: pointer;
     z-index: 1;
-    margin: auto;
+    margin: 30px auto 0 auto;
     position: relative;
-    top: 60%;
+    /* top: 60%; */
     /* bottom: 15%; */
     left: 0;
     right: 0;
@@ -283,15 +280,14 @@ footer{
     padding: 0 auto;
     margin: 6px;
   }
-  /* .img-lab{
-    position: relative;
-    margin: 0 auto;
-    background-color: #34BEBD;
-  } */
+  .table{
+    border-color: rgba(0, 0, 0, 0.76);
+  }
+
  
 /*------Ajustando contenidos------ */
 @media (orientation: portrait) {
-    .none,.cards,.tableweb{
+    .none,.cards,.tableweb,span,.box-welcomepc{
         display: none;
     }
     .abc,.botones,.tablephone, .box-welcome{
@@ -300,6 +296,15 @@ footer{
     main{
         padding-top: 10vh !important;
     }
+    main>.row{
+      padding:10px 0px 0px 0px;
+  }
+    .navbar-nav .nav-link {
+      z-index: 1000;
+      /* padding-right: 0; */
+      text-align: center;
+      /* padding-left: 0; */
+  }
     .boton{
         width: 80%;
         margin: 10px 10px 10px 35px;
@@ -325,8 +330,9 @@ footer{
         font-size: 110%;
     }
     /* text-welcome */
-    #box-welcome{
-      background-color: #be3480;
+    #box-welcome,.texto{
+      /* background-color: #be3480; */
+      margin: 0 auto;
     }
     .css-typing p {
       /* background-color: #13274E; */
@@ -380,7 +386,7 @@ footer{
         animation-fill-mode: forwards;
       }
       
-      @keyframes type {
+      /* @keyframes type {
         0% {
           width: 0;
         }
@@ -413,7 +419,7 @@ footer{
         50% {
           border-color: transparent;
         }
-      }
+      } */
     
 
   }
@@ -432,7 +438,12 @@ footer{
 }
 
   @media   (orientation: landscape) and  (max-width: 760px){
-     
+    span,.box-welcomepc{
+      display: none;
+  }
+  .box-welcome{
+    display: block !important;
+  }
       #accordion{
         width: 100% !important;
         margin: 0% !important;
@@ -469,6 +480,61 @@ footer{
     .box-welcomepc{
       margin: 0;
     }
+    .texto{
+      margin: 3em 0 0 0%;
+    }
+    .css-typing p {
+      /* background-color: #13274E; */
+        border-right: .15em solid orange;
+        /* text-align: center; */
+        font-family: "Courier";
+        font-size: 14px;
+     
+      }
+      .css-typing p:nth-child(1) {
+        width: 18em;
+        margin-left: 10%;
+        -webkit-animation: type 3s steps(40, end);
+        animation: type 3s steps(40, end);
+        -webkit-animation-fill-mode: forwards;    
+        animation-fill-mode: forwards;
+      }
+      
+      .css-typing p:nth-child(2) {
+        width: 17.5em;
+        opacity: 0;
+        margin-left: 9%;
+        -webkit-animation: type2 3s steps(40, end);
+        animation: type2 3s steps(40, end);
+        -webkit-animation-delay: 4s;
+        animation-delay: 3s;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+        
+      }
+      
+      .css-typing p:nth-child(3) {
+        width: 18em;
+        opacity: 0;
+        -webkit-animation: type2 3s steps(40, end);
+        animation: type2 3s steps(40, end);
+        -webkit-animation-delay: 4s;
+        animation-delay: 6s;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+        margin-left: 8%;
+      }
+      .css-typing p:nth-child(4) {
+        width:23.5em;
+        opacity: 0;
+        margin-left: 0%;
+        -webkit-animation: type2 3s steps(40, end);
+        animation: type2 3s steps(40, end);
+        animation-delay: 9s;
+        -webkit-animation-fill-mode: forwards;    
+        animation-fill-mode: forwards;
+      }
+
   }
 
 
@@ -485,31 +551,3 @@ footer{
 .present{
     width: 100%;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

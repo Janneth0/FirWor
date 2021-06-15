@@ -19,10 +19,16 @@
 </head>
 
 <body class="container-fluid ">
+
+  
+
+  
+
   <header class="row">
     <nav class="navbar navbar-expand-lg navbar-dark " >
+      <!-- <div class="col-lg-2 col-md-0 col-sm-0 col-0"></div> -->
       <a href="./pages/presentacion.html">
-        <img class="col-lg-1 col.md-1 col-sm-2 col-3"  src="../FirWor/img/logo-small.png" alt="Firwor-logo"   id="logo">
+        <img class="col-lg-2 col.md-1 col-sm-2 col-3"  src="../img/logo-small.png" alt="Firwor-logo"   id="logo">
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02"
         aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,22 +38,22 @@
       <div class="collapse navbar-collapse" id="navbarColor02">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item ">
-            <a class="nav-link" href="./pages/laboral.html">Introduccion al Mundo Laboral</a>
+            <a class="nav-link" href="./pages/laboral.html">Introduccion al Mundo Laboral </a>  <!--span class="none">|</span-->
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./pages/cv.html">Curriculum Vitae</a>
+            <a class="nav-link" href="./pages/cv.html">Curriculum Vitae <!--span>|</span--></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./pages/habilidades.html">Habilidades blandas</a>
+            <a class="nav-link" href="./pages/habilidades.html">Habilidades Socioemocionales <!--span>|</span--></a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link " href="./pages/firworpedia.html">Firworpedia</a>
+            <a class="nav-link " href="./pages/firworpedia.html">Firworpedia <!--span>|</span--></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./pages/busqueda.html">Busqueda Laboral</a>
+            <a class="nav-link" href="./pages/busqueda.html">Busqueda Laboral <!--span>|</span--></a>
           </li>
           <li class="nav-item buscar">
-            <a class="nav-link " href="./pages/quienes-somos.html">Nosotros</a>
+            <a class="nav-link " href="./pages/quienes-somos.html">Nosotros </a>
           </li>
 
         </ul>
@@ -55,19 +61,21 @@
     </nav>
   </header>
   <main class="container" id="main-welcome">
-    <div class="defin" style="padding: 10vh;">
-      <img src="../img/titulo.png" alt="">
-    </div>
-    <div class="row ">
+    <div class="row">
       <div class="col-lg-3 col-md-2 col-sm-2 col-0"></div>
-      <img class="img-welcome col-lg-6 col-md-8 col-sm-8 col-12" src="./img/bienvenidos.jpg" alt="Welcome">
+      <div class="defin  " >
+        <img src="../img/titulo.png" alt="" class="col-lg-6 col-md-8 col-sm-8 col-12">
+      </div>
       <div class="col-lg-3 col-md-2 col-sm-2 col-0"></div> <br>
     </div>
-
-    <div class="row none box-welcomepc" >
-      <div class="col-lg-3 col-md-1 col-sm-0 col-0"></div>
-      <div class="css-typing col-lg-6 col-md-9 col-sm-12 " >
-        <p>
+    
+    <div class="row " style="text-align: center;">
+      <!-- <div class="col-lg-0 col-md-0 col-sm-0 col-0"></div> -->
+      <img class="img-welcome col-lg-6 col-md-12 col-sm-5 col-12" src="./img/bienvenidos.jpg" alt="Welcome">
+      <!-- <div class=" col-md-1 "></div>  -->
+      <!-- pc -->
+      <div class="css-typing col-lg-6 col-md-12 col-sm-0 none box-welcomepc" >
+        <div class="texto"> <p>
           FirWor es la web donde podrás encontrar información
         </p>
         <p>
@@ -75,34 +83,51 @@
         </p>
         <p>
           TE INVITAMOS A DESCUBRIR EL CONTENIDO!!
-        </p>
+        </p></div>
+       
+        <div class="button-p animation">
+          <a class="" href="./pages/presentacion.html">Welcome!</a>
+        </div> 
       </div>
-      <div class="col-lg-3 col-md-2 col-sm- col-0"></div> <br>
-    </div>
-    <div class="row box-welcome " style="display: none;">
-      <div class="col-lg-3 col-md-2 col-sm-2 col-0"></div>
-      <div class="css-typing col-lg-6 col-md-8 col-sm-8 col-12" id="box-welcome">
-        <p>
-          FirWor es la web donde podrás
-        </p>
-        <p>encontrar información para el</p>
-        <p>
-          inicio de la búsqueda laboral,
-        </p>
-        <p>
-          TE INVITAMOS A DESCUBRIR EL CONTENIDO!!
-        </p>
+      <!-- celu -->
+      <div class="css-typing col-lg-0 col-md-12 col-sm-7 col-12 box-welcome "  style="display: none;">
+        <div class="texto">
+          <p>
+            FirWor es la web donde podrás
+          </p>
+          <p>encontrar información para el</p>
+          <p>
+            inicio de la búsqueda laboral,
+          </p>
+          <p>
+            TE INVITAMOS A DESCUBRIR EL CONTENIDO!!
+          </p>
+        </div>
+        <div class="button-p animation">
+          <a class="" href="./pages/presentacion.html">Welcome!</a>
+        </div> 
       </div>
-      <div class="col-lg-3 col-md-2 col-sm-2 col-0"></div> <br>
+      
     </div>
 
-    <div class="wrapper"> 
+    <!-- <div class="row none box-welcomepc" >
+      <div class="col-lg-3 col-md-1 col-sm-0 col-0"></div>
+      
+      <div class="col-lg-3 col-md-2 col-sm- col-0"></div> <br>
+    </div> -->
+    <!-- <div class="row box-welcome " style="display: none;">
+      <div class="col-lg-3 col-md-2 col-sm-2 col-0"></div>
+      
+      <div class="col-lg-3 col-md-2 col-sm-2 col-0"></div> <br>
+    </div> -->
+
+    <!-- <div class="wrapper"> 
     
       <div class="button-p animation">
         <a class="" href="./pages/presentacion.html">Welcome!</a>
       </div> 
       
-    </div>
+    </div> -->
   </main>
 
 
