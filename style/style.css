@@ -43,7 +43,7 @@ a:link, a:visited, a:active {
     font-size: 20vh;
     text-shadow: -5px 5px 0px #00e6e6, -10px 10px 0px #01cccc, -15px 15px 0px #00bdbd;
     color: #13274e;
-    padding: 10vh 5vh 10vh;
+    padding: 10vh 10vh 0vh 10vh;
 }
 main>.row{
     padding:20px 0px;
@@ -328,6 +328,7 @@ footer{
     }
     .card{
         margin:5% 0%;
+        
     }
     #accordion{
         width: 100% !important;
