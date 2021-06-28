@@ -11,6 +11,9 @@ html,body{
 main{
     padding-top: 14vh;
 }
+.main-welcome{
+margin: 0 auto;
+}
 /* Font */
 h1{
     font-family: 'Bebas Neue', cursive;
@@ -23,14 +26,30 @@ h2{
   font-size: 5vh;
   text-align: left;
   padding-top: 5vh;
-  padding-bottom: 3vh;
+}
+.img-cv{
+
+  width: 80%;
+ 
+}
+.nosotras{
+  font-family: 'Bebas Neue', cursive;
 }
 .txtcenter,td,th,.defin{
     text-align: center;
 }
+.p-card{
+  margin: 0 0 5em 0;
+}
+th,td,.copete,.copete-p,p,ul, ol{
+  font-family: 'Baloo Tammudu 2', cursive;
+}
 .copete{
   font-size: 3vh;
-  font-family: 'Baloo Tammudu 2', cursive;
+}
+.copete-p{
+  font-size: 1.5em;
+  padding: 20px;
 }
 p{
     text-align: justify;
@@ -69,6 +88,9 @@ span{
     background-color: #34BEBD;
     border-color:#34BEBD;
 }
+.animation .btn-primary{
+  background: #19A087; 
+}
 .btn-link{
     text-decoration: none;
     color: #13274E;
@@ -77,14 +99,24 @@ span{
 }
 /* TIpos de contratos */
 .cardTC{
-    background-color: #34bebecb;
+    background-color: #40ba82;
     color: rgba(19, 19, 19, 0.959);
     text-align: center;
-    
+}
+.cardTC p{
+  padding: 10px;
+}
+.cardTC button{
+  color: ghostwhite;
+  font-size: 3vh;
 }
 .card{
+  text-align: center;
     margin: 10px;
     position: inherit;
+}
+.card-text, .modal-body>p{
+  padding: 5% ;
 }
 
 .cards .row{
@@ -99,6 +131,13 @@ span{
   max-width: 39% !important;
   max-height: 25rem !important;
 }
+.card-n {
+  margin: 10px;
+  position: inherit;
+}
+.card-text1{
+  font-size: 2.5vh;
+}
 /*------Imagenes------ */
 .portada{
     width: 80%!important;
@@ -106,14 +145,40 @@ span{
     height: auto;
     vertical-align: middle;
 }
+    /* ------- */
+    .imagen {      
+      overflow: hidden;  
+      border: 5px solid #204692cc;
+      border-radius: 20px;
+    }
+    .img-l {       
+      border: 2px solid black;
+      border-radius: 20px;
+      padding: 0;
+      margin: 5px 0 6vh 0;
+    }
+ 
+.img-welcome{
+  padding: 0;
+}
 
 .imagen>img{
     display: block;
-    width: 100%;
-    height: 130%  !important;
     background-color: blue;
+    width: 100%;
+    height: 100%;
+    margin-bottom: -5px;
+    transition: all 0.3s ease-out;
+    position: relative;
+    z-index: 2;
 }
-
+.imagen:hover{
+  border: 5px solid #34bebecb;
+}
+.imagen:hover img{
+  transform: scale(1.2, 1.2);
+  z-index: 9;
+}
 #logo{
     width: 10vh  !important;
 }
@@ -154,7 +219,6 @@ footer{
 
 /* WELCOME */
 .texto{
-  /* background-color: blueviolet; */
   margin: 3em 0 0 15%;
 }
 .css-typing p {
@@ -242,8 +306,6 @@ footer{
   .wrapper {
     height: 100%;
     margin: 0 ;
-    /* padding-top: 120px; */
-    /* text-align: center; */
   }
   
   .hide {
@@ -261,10 +323,13 @@ footer{
     z-index: 1;
     margin: 30px auto 0 auto;
     position: relative;
-    /* top: 60%; */
-    /* bottom: 15%; */
     left: 0;
     right: 0;
+  }
+  .button-p a{
+    color: #E8E8E8;
+    font-size: 3vh;
+    padding: auto 0;
   }
   
   .button:hover {
@@ -290,16 +355,36 @@ footer{
   .table{
     border-color: rgba(0, 0, 0, 0.76);
   }
-
- 
+   
+  .tips{
+    
+padding: 0 6% 0 6% ;
+  }
+  .carousel-indicators{
+    position: relative;
+  }
+  .carousel-indicators i{
+    /* margin-top: 20px; */
+    padding: 40px 50px 0px 25px; 
+    width: 30px;
+    font-size: 4vh;
+  }
+  
+  #carouselExampleIndicators{
+    margin: 5%;
+    /* color: teal;sz */
+  }
+      
+  
 /*------Ajustando contenidos------ */
 @media (orientation: portrait) {
-    .none,.cards,.tableweb,span,.box-welcomepc{
+    .none,.cards,.tableweb,span,.box-welcomepc,.none-l{
         display: none;
     }
     .abc,.botones,.tablephone, .box-welcome{
         display: block !important;
     }
+
     main{
         padding-top: 10vh !important;
     }
@@ -308,10 +393,24 @@ footer{
   }
     .navbar-nav .nav-link {
       z-index: 1000;
-      /* padding-right: 0; */
       text-align: center;
-      /* padding-left: 0; */
   }
+  .copete-p{
+    font-size: 1em;
+    padding: 3px;
+  }
+  .carousel-indicators i{
+    padding: 0;
+  margin: 0 10px 0 10px;
+  font-size: 5vh;
+}
+.carousel-inner{
+  margin-bottom: 10%;
+}
+#carouselExampleIndicators{
+  margin: 0%;
+  /* color: teal;sz */
+}
     .boton{
         width: 80%;
         margin: 10px 10px 10px 35px;
@@ -327,6 +426,7 @@ footer{
         width: 50%;
     }
     .card{
+      
         margin:5% 0%;
         
     }
@@ -338,9 +438,12 @@ footer{
         font-size: 110%;
     }
     /* text-welcome */
-    #box-welcome,.texto{
+    #box-welcome{
       /* background-color: #be3480; */
       margin: 0 auto;
+    }
+    .texto{
+      margin: 5vh 0 0 0;
     }
     .css-typing p {
       /* background-color: #13274E; */
@@ -384,7 +487,7 @@ footer{
         margin-left: 8%;
       }
       .css-typing p:nth-child(4) {
-        width:23.5em;
+        width:23em;
         opacity: 0;
         margin-left: 0%;
         -webkit-animation: type2 3s steps(40, end);
@@ -393,42 +496,11 @@ footer{
         -webkit-animation-fill-mode: forwards;    
         animation-fill-mode: forwards;
       }
-      
-      /* @keyframes type {
-        0% {
-          width: 0;
-        }
-        99.9% {
-          border-right: .15em solid orange;
-        }
-        100% {
-          border: none;
-        }
-      }
-      
-      
-      @keyframes type2 {
-        0% {
-          width: 0;
-        }
-        1% {
-          opacity: 1;
-        }
-        99.9% {
-          border-right: .15em solid orange;
-        }
-        100% {
-          opacity: 1;
-          border: none;
-        }
-      }
-          
-      @keyframes blink {
-        50% {
-          border-color: transparent;
-        }
-      } */
     
+
+      .nosotras{
+        font-size: 5vh !important;
+      }
 
   }
 
@@ -440,6 +512,9 @@ footer{
   -webkit-border-radius: 25px 25px 25px 25px;
   -webkit-box-shadow: 13px 13px 22px -15px #000000; 
     box-shadow: 13px 13px 22px -15px #000000; 
+    height: 95%;
+    
+    
 }
 .img-card{
     position: absolute;
@@ -448,6 +523,9 @@ footer{
   @media   (orientation: landscape) and  (max-width: 760px){
     span,.box-welcomepc{
       display: none;
+  }
+  .none-l{
+    display: none;
   }
   .box-welcome{
     display: block !important;
@@ -459,8 +537,18 @@ footer{
     .card{
         text-align: center;
         width: 15.5rem !important;
-        height: 29rem !important;
+        height: 31.5rem !important;
         
+    }
+    /* .card-n { */
+      /* text-align: center; */
+      /* width: 15.5rem !important; */
+      /* height: 29rem !important; */
+  /* } */
+
+    .copete-p{
+      font-size: 1em;
+      padding: 0;
     }
     .cards .row{
         margin: 10% 0%;
@@ -472,16 +560,20 @@ footer{
     .cards .card{
         margin: 0% 0% 0% 15px;
       max-width: 15rem !important;
-      max-height: 27rem !important;
+      max-height: 35rem !important;
     }
-
+    
+    .card-style .card-text1{
+      font-size: 5vh;
+    }
     .cardhab{
         /* background-color: #34BEBD; */
       width: 16rem !important;
       height: 18.5rem !important;
       margin: 20px !important;
-      
     }
+
+
     .line-1,.line-2,.line-3,.line-4{
         font-size: 110%;
     }
@@ -491,6 +583,11 @@ footer{
     .texto{
       margin: 3em 0 0 0%;
     }
+    .carousel-indicators i{
+      padding: 0;
+    margin: 25% 10px 0 10px;
+    font-size: 8vh;
+  }
     .css-typing p {
       /* background-color: #13274E; */
         border-right: .15em solid orange;
@@ -541,6 +638,11 @@ footer{
         animation-delay: 9s;
         -webkit-animation-fill-mode: forwards;    
         animation-fill-mode: forwards;
+      }
+      .title{
+
+          font-size: 12vh !important;
+          padding: 10vh 30vh 0vh 30vh !important;
       }
 
   }
