@@ -8,8 +8,8 @@ html,body{
     /* height: 100%; */
     
 }
-main{
-    padding-top: 14vh;
+main, #presentacion{
+    padding-top: 17vh;
 }
 .main-welcome{
 margin: 0 auto;
@@ -112,7 +112,7 @@ span{
 }
 .card{
   text-align: center;
-    margin: 10px;
+    margin: 20px 0px 20px 20px;
     position: inherit;
 }
 .card-text, .modal-body>p{
@@ -147,6 +147,7 @@ span{
 }
     /* ------- */
     .imagen {      
+      margin-top: 7vh;
       overflow: hidden;  
       border: 5px solid #204692cc;
       border-radius: 20px;
@@ -160,6 +161,7 @@ span{
  
 .img-welcome{
   padding: 0;
+  margin: 0;
 }
 
 .imagen>img{
@@ -538,8 +540,15 @@ padding: 0 6% 0 6% ;
         text-align: center;
         width: 15.5rem !important;
         height: 31.5rem !important;
+        margin: 10px 0px 0px 10px;
         
     }
+
+    /* .card{
+      text-align: center;
+        margin: 20px 0px 20px 20px;
+        position: inherit;
+    } */
     /* .card-n { */
       /* text-align: center; */
       /* width: 15.5rem !important; */
