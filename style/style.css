@@ -377,7 +377,15 @@ padding: 0 6% 0 6% ;
     /* color: teal;sz */
   }
       
-  
+  .fir-card{
+    margin: 10px 0px 0px 30px;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  .img-tip{
+    max-width: 550px;
+    max-height: 450px;
+  }
 /*------Ajustando contenidos------ */
 @media (orientation: portrait) {
     .none,.cards,.tableweb,span,.box-welcomepc,.none-l{
@@ -396,6 +404,9 @@ padding: 0 6% 0 6% ;
     .navbar-nav .nav-link {
       z-index: 1000;
       text-align: center;
+  }
+  .fir-card{
+    margin: 10px 0px 0 0px;
   }
   .copete-p{
     font-size: 1em;

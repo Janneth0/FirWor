@@ -23,10 +23,13 @@ function traerdatos() {
 
                 if (posicion >= 0) {
                     wordf.innerHTML += `
-                    <div class="col-3 text-white " style=" background-color:${item.color};">
-      <div class="card-body card-fondo" style=" background-position-y: center; ">  </div>
-          <h3 class="card-title" style="font-family: 'Bebas Neue';  text-align: left;padding: 5vh 2vh 2vh 2vh;">${item.title}</h3>
+
+              
+                    <div class="col-lg-4 col-md-6 col-sm-5 col-12 text-white fir-card " style=" background-color:${item.color};">
+      <div class="card-body card-fondo" style=" background-position-y: center; ">  
+          <h3 class="card-title" style="font-family: 'Bebas Neue';  text-align: left;padding: 1vh 2vh 2vh 2vh;">${item.title}</h3>
           <p class="card-text1" style="font-family: 'Baloo Tammudu 2', cursive; padding: 2vh ;  ">${item.def}</p>
+    </div>
     </div>
                       `
                     posicion = cadena.indexOf(x);
