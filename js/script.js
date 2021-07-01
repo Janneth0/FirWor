@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
             let x = $("#txtinput").val().toUpperCase();
             let datos = JSON.parse(this.response);
 
-            word.innerHTML = `<div class="col-lg-1 "></div>`;
+        
 
             console.log(datos)
             for (let item of datos) {
@@ -61,8 +61,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 word.innerHTML += `
                 <div class="col-lg-10 col-md-10 col-sm-10 col-12  text-white " style=" background-color:${item.color}; margin:5px;">
                 <div class="" style=" background-position-y: center; ">  </div>
-                    <h3 class="" style="font-family: 'Bebas Neue';  text-align: left;">${item.title}</h3>
-                    <p class="card-text1" style="font-family: 'Baloo Tammudu 2', cursive; padding: 5vh 0vh 2vh 0vh;  ">${item.def}</p>
+                    <h3 class="" style="font-family: 'Bebas Neue';  text-align: left; padding: 5vh 2vh 2vh 2vh">${item.title}</h3>
+                    <p class="card-text1" style="font-family: 'Baloo Tammudu 2', cursive; padding: 2vh ;  ">${item.def}</p>
               </div>
                       `
                 posicion = cadena.indexOf(x);
