@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 // if (posicion >= 0) {
                 word.innerHTML += `
-                <div class="col-lg-3 col-md-4 col-sm-6 col-12  text-white " style=" background-color:#983DB2ad; margin:5px;">
+                <div class="col-lg-10 col-md-10 col-sm-10 col-12  text-white " style=" background-color:#983DB2ad; margin:5px;">
                 <div class="" style=" background-position-y: center; ">  </div>
                     <h3 class="" style="font-family: 'Bebas Neue';  text-align: left;">${item.title}</h3>
                     <p class="card-text1" style="font-family: 'Baloo Tammudu 2', cursive; padding: 5vh 0vh 2vh 0vh;  ">${item.def}</p>
