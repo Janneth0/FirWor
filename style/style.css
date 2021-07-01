@@ -3,10 +3,7 @@
 html,body{
     padding-bottom: 9vh;
     margin: 0;
-    background-color: #E8E8E8;
-    /* width: 100%; */
-    /* height: 100%; */
-    
+    background-color: #E8E8E8;    
 }
 main, #presentacion{
     padding-top: 17vh;
@@ -224,12 +221,9 @@ footer{
   margin: 3em 0 0 15%;
 }
 .css-typing p {
-  /* background-color: #13274E; */
     border-right: .15em solid orange;
-    /* text-align: center; */
     font-family: "Courier";
     font-size: 22px;
-
     white-space: nowrap;
     overflow: hidden;
   }
@@ -366,7 +360,6 @@ padding: 0 6% 0 6% ;
     position: relative;
   }
   .carousel-indicators i{
-    /* margin-top: 20px; */
     padding: 40px 50px 0px 25px; 
     width: 30px;
     font-size: 4vh;
@@ -374,7 +367,6 @@ padding: 0 6% 0 6% ;
   
   #carouselExampleIndicators{
     margin: 5%;
-    /* color: teal;sz */
   }
       
   .fir-card{
@@ -422,7 +414,6 @@ padding: 0 6% 0 6% ;
 }
 #carouselExampleIndicators{
   margin: 0%;
-  /* color: teal;sz */
 }
     .boton{
         width: 80%;
@@ -452,16 +443,13 @@ padding: 0 6% 0 6% ;
     }
     /* text-welcome */
     #box-welcome{
-      /* background-color: #be3480; */
       margin: 0 auto;
     }
     .texto{
       margin: 5vh 0 0 0;
     }
     .css-typing p {
-      /* background-color: #13274E; */
         border-right: .15em solid orange;
-        /* text-align: center; */
         font-family: "Courier";
         font-size: 14px;
      
@@ -555,17 +543,6 @@ padding: 0 6% 0 6% ;
         
     }
 
-    /* .card{
-      text-align: center;
-        margin: 20px 0px 20px 20px;
-        position: inherit;
-    } */
-    /* .card-n { */
-      /* text-align: center; */
-      /* width: 15.5rem !important; */
-      /* height: 29rem !important; */
-  /* } */
-
     .copete-p{
       font-size: 1em;
       padding: 0;
@@ -587,7 +564,6 @@ padding: 0 6% 0 6% ;
       font-size: 5vh;
     }
     .cardhab{
-        /* background-color: #34BEBD; */
       width: 16rem !important;
       height: 18.5rem !important;
       margin: 20px !important;
@@ -609,9 +585,7 @@ padding: 0 6% 0 6% ;
     font-size: 8vh;
   }
     .css-typing p {
-      /* background-color: #13274E; */
         border-right: .15em solid orange;
-        /* text-align: center; */
         font-family: "Courier";
         font-size: 14px;
      
