@@ -126,7 +126,6 @@ span{
 .cards .card{
     margin: 3% 0% 4% 5%;
   max-width: 39% !important;
-  max-height: 25rem !important;
 }
 .card-n {
   margin: 10px;
@@ -210,9 +209,10 @@ footer{
 .sr-only{
     color: #13274E
 }
-.card-fondo{
+.cardhab .card-fondo{
     background-repeat: no-repeat;
-    padding: 10%;
+    margin: 10px; 
+    padding: 19%;
     
 }
 
@@ -378,6 +378,9 @@ padding: 0 6% 0 6% ;
     max-width: 550px;
     max-height: 450px;
   }
+  .cardhab{
+    margin: 20px; 
+   }
 /*------Ajustando contenidos------ */
 @media (orientation: portrait) {
     .none,.cards,.tableweb,span,.box-welcomepc,.none-l{
@@ -434,6 +437,9 @@ padding: 0 6% 0 6% ;
         margin:5% 0%;
         
     }
+    .cardhab{
+      margin: 10px 10px 10px 0px;
+     }
     #accordion{
         width: 100% !important;
         margin: 0% !important;
@@ -521,7 +527,10 @@ padding: 0 6% 0 6% ;
     position: absolute;
 }
 
+
+
   @media   (orientation: landscape) and  (max-width: 760px){
+    
     span,.box-welcomepc{
       display: none;
   }
@@ -543,7 +552,7 @@ padding: 0 6% 0 6% ;
         
     }
 
-    .copete-p{
+    .copete-p,.copete{
       font-size: 1em;
       padding: 0;
     }
@@ -555,20 +564,17 @@ padding: 0 6% 0 6% ;
        
     }
     .cards .card{
-        margin: 0% 0% 0% 15px;
+        margin: 0% 0% 10px 15px;
       max-width: 15rem !important;
       max-height: 35rem !important;
     }
     
-    .card-style .card-text1{
-      font-size: 5vh;
+     .card-text1{
+      font-size: 5vh !important;
     }
-    .cardhab{
-      width: 16rem !important;
-      height: 18.5rem !important;
-      margin: 20px !important;
+    h2{
+      font-size: 7vh;
     }
-
 
     .line-1,.line-2,.line-3,.line-4{
         font-size: 110%;
